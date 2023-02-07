@@ -137,9 +137,10 @@
                         <option value="">Kies</option>
                         <?php 
                             $genre2 = $conn->query("SELECT * FROM genre");
-                                while($row=$genre2->fetch_assoc()): ?>
-                                    <option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option>
-                                <?php endwhile;?>
+                            while($row=$genre2->fetch_assoc()): ?>
+                                <option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option>
+                            <?php endwhile;
+                        ?>
                     </select>
                 </div>
                 <br>

@@ -19,7 +19,6 @@
     ?>  
 </head>
 <body>
-
     <div class="wrapper">
         <!--Top menu -->
         <div class="sidebar">
@@ -31,7 +30,7 @@
             </div>
             <!--menu item-->
             <ul>
-            <li>
+                <li>
                     <a href="index.php" class="active">
                         <span class="icon"><i class="fas fa-home"></i></span>
                         <span class="item">Home</span>

@@ -132,9 +132,10 @@
                         <option value="">Kies</option>
                         <?php 
                             $hall = $conn->query("SELECT * FROM movie_hall");
-                                while($row=$hall->fetch_assoc()): ?>
-                                    <option value="<?php echo $row['id'];?>"><?php echo $row['hall_name'];?></option>
-                                <?php endwhile;?>
+                            while($row=$hall->fetch_assoc()): ?>
+                                <option value="<?php echo $row['id'];?>"><?php echo $row['hall_name'];?></option>
+                            <?php endwhile;
+                        ?>
                     </select>
                 </div>
                 <div>
