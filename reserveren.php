@@ -1,13 +1,13 @@
 <?php session_start();?>
 <html>
- <head>
-    <?php require_once "admin/includes/dbh.inc.php";?>
-    <title>Navigation Bar With Dropdown Menu</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/navbar.css">
-  </head>
-  <body>
+    <head>
+        <?php require_once "admin/includes/dbh.inc.php";?>
+        <title>Navigation Bar With Dropdown Menu</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
         <div id="ribbon">New Nav Bar</div>  
         <div id="container">
             <nav>
@@ -45,7 +45,7 @@
                 </li>
             </nav>
         </div>
-    <section>
+        <section>
             <?php ?>
             <form method="post" action="admin/includes/manage.inc.php?user=<?php if(!isset($_SESSION["user_id"])) { echo "login first"; exit();} echo $_SESSION["user_id"];?>">
                 <h1>Reservation</h1><br>
@@ -75,5 +75,5 @@
                 <input type="reset" name="clear" value="Clear">
             </form>
         </section>
-  </body>
+    </body>
 </html>
