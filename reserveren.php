@@ -12,7 +12,7 @@
         <div id="container">
             <nav>
                 <div id="logo">
-                Company
+                    Company
                 </div>
                 <ul>
                 <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Movies &nbsp;<i class="fa fa-caret-down"></i></a>
